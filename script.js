@@ -31,7 +31,11 @@
             const count = $("#input_count").val();
 
             for (let i = 0; i < count; i++) {
-                $("#playground").prepend(`<div style="width: ${width}px; height: ${height}px; border-radius: ${radius}px; background-color: ${color}; margin: 20px 0px;"></div>`);
+                $("#playground").prepend(`
+                    <div style="width: ${width}px; 
+                    height: ${height}px; border-radius: ${radius}px; 
+                    background-color: ${color}; 
+                    margin: 20px 0px;"></div>`);
             }
         });
     });
